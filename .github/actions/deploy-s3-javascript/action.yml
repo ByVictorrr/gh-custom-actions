@@ -1,0 +1,8 @@
+name: 'Deploy to AWS S3'
+description: 'Deploy a static website via AWS S3'
+runs:
+  # node16 for nodev16
+  # tells github this is a custom javascript action
+  using: 'node16'
+  # main keyword required for js action: https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-javascript-actions
+  main: 'main.js'
