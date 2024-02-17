@@ -10,7 +10,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Load & cache dependencies
-        id: cache-deps
+        id: used-cache
         uses: ./.github/actions/cached-deps
       - name: Output Action Return values
         run: echo "Cache used? ${{ steps.cache-deps.outputs.used-cache }}"
